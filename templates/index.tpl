@@ -1,7 +1,11 @@
 {include file="header.tpl"}
 <div id="container">
 	<div id="people">
-		<div id="add-new-div"><a id="add-new">Add New</a><a id="logout" href="logout.php">Log Out</a></div>
+		<div id="add-new-div">
+		{if $Admin == true}
+		<a id="add-new">Add New</a>
+		{/if}
+		<a id="logout" href="logout.php">Log Out</a></div>
 		<div id="index-message">{$Message}</div>
 		<div id="add-new-form">
 		</div>

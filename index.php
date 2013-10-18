@@ -8,6 +8,8 @@ if (!isset($_SESSION['user_info']))
 	header('location: login.php');
 }
 
+
+
 $intPage = 0;
 if (isset($_GET['page']))
 {
@@ -32,4 +34,5 @@ $smarty->assign('People', $arrPeople);
 $smarty->assign('Total', $intTotal);
 $smarty->assign('Page', $intPage);
 $smarty->assign('Message', $strMsg);
+$smarty->assign('Admin', $_SESSION['user_info']['privilege'] == 0);
 $smarty->display('index.tpl');

@@ -126,6 +126,7 @@ show = true;
 				$(entry_tr.children()[1]).html(data.type);
 				$(entry_tr.children()[2]).html(data.desc);
 				$(button).html("Edit");
+				$("#index-message").html("");
 			}
 			else
 			{

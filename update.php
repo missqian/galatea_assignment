@@ -175,6 +175,7 @@ if ($arrData !== null && $arrRet['errno'] == 0)
 $arrRet['name'] = $arrData['name'];
 $arrRet['type'] = $arrData['privilege'];
 $arrRet['desc'] = $arrData['other'];
-$arrRet['id'] = $arrData['id'];
+if (isset($arrData['id']))
+	$arrRet['id'] = $arrData['id'];
 
 echo json_encode($arrRet);

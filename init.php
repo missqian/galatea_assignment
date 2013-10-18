@@ -13,4 +13,4 @@ function my_autoload($strClassName)
 	require_once($strClassName . ".php");
 }
 spl_autoload_register('my_autoload'); 
-
+date_default_timezone_set("America/New_York"); 

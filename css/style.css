@@ -1,0 +1,278 @@
+html
+{
+	position: relative;
+	height: 100%;
+}
+body
+{
+	position: relative;
+	color: #666;
+	margin: 0;
+	height: 100%;
+
+}
+
+#add-new,
+#logout,
+.operation,
+button,
+input,
+textarea
+{
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	font-family: inherit;
+}
+
+#add-new,
+#logout,
+.operation,
+button,
+input
+{
+	    line-height: normal;
+}
+
+textarea
+{
+	font-size: 100%;
+	overflow: auto;
+	vertical-align: top;
+}
+
+input[type="checkbox"],
+input[type="radio"],
+input[type="file"],
+input[type="hidden"],
+input[type="image"],
+input[type="color"]
+{
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+}
+
+button,
+#add-new,
+#logout,
+.operation,
+input[type="submit"],
+input[type="button"],
+input[type="reset"]
+{	
+	padding: 6px 10px;
+	font-size: 11px;
+	line-height: 1.428571429;
+	font-weight: normal;
+	color: #7c7c7c;
+	background-color: #e6e6e6;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: -ms-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: -webkit-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: -o-linear-gradient(top, #f4f4f4, #e6e6e6);
+	background-image: linear-gradient(top, #f4f4f4, #e6e6e6);
+	border: 1px solid #d2d2d2;
+	border-radius: 3px;
+	box-shadow: 0 1px 2px rgba(64, 64, 64, 0.1);
+}
+
+#add-new,
+#logout,
+.operation,
+input[type="submit"],
+input[type="button"],
+input[type="reset"]
+{
+	cursor: pointer;
+}
+button[disabled],
+input[disabled]
+{
+	    cursor: default;
+}
+
+#add-new:hover,
+#logout:hover,
+.operation:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover
+{
+	color: #5e5e5e;
+	background-color: #ebebeb;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
+	background-image: linear-gradient(top, #f9f9f9, #ebebeb);
+}
+#add-new:active,
+#logout:active,
+.operation:active,
+button:active,
+input[type="submit"]:active,
+input[type="button"]:active,
+input[type="reset"]:active
+{
+	color: #757575;
+	background-color: #e1e1e1;
+	background-repeat: repeat-x;
+	background-image: -moz-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: -ms-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: -webkit-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: -o-linear-gradient(top, #ebebeb, #e1e1e1);
+	background-image: linear-gradient(top, #ebebeb, #e1e1e1);
+	box-shadow: inset 0 0 8px 2px #c6c6c6, 0 1px 0 0 #f4f4f4;
+	border: none;
+}
+#floater
+{
+	width:100%;
+	height: 25%;
+}
+#login-panel
+{
+	position: relative;
+	margin:auto;
+	vertical-align: middle;
+	padding: 40px;
+	width: 300px;
+	border: 1px solid #e5e5e5;
+	-moz-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+	-webkit-box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+	box-shadow: rgba(200,200,200,0.7) 0 4px 10px -1px;
+}
+#login-panel input[type='text'],
+#login-panel input[type='password']
+{
+	color: #666;
+	width: 98%;
+	font-size: 1.5rem;
+}
+#login-panel input[type='submit']
+{
+	float: right;
+	font-size: 1.0rem;
+}
+
+#index-message,
+#login-message
+{
+	clear: both;
+	background-color: #ffebeb;
+	border: solid 1px #c00;
+	border-radius: 3px;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+#container
+{
+	padding-top: 20px;
+}
+#people
+{
+	width: 70%;
+	margin: auto;
+}
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+table
+{
+	border-bottom: 1px solid #ededed;
+	color: #757575;
+	font-size: 12px;
+	font-size: 0.857142857rem;
+	line-height: 2;
+	width: 100%;
+}
+table caption
+{
+	font-size: 16px;
+	font-size: 1.142857143rem;
+	margin: 24px 0;
+	margin: 1.714285714rem 0;
+}
+th,
+td
+{
+	padding: 10px 5px;
+}
+th
+{
+	text-align: left;
+}
+tr:nth-child(even)
+{
+	background-color:#ebebeb;
+}
+
+td
+{
+	border-top: 1px solid #ededed;
+}
+td:nth-child(1)
+{
+	width: 15%;
+}
+td:nth-child(2)
+{
+	width: 15%;
+}
+td:nth-child(3)
+{
+	width: 50%;
+}
+a
+{
+	color: #21759b;
+	text-decoration: none;
+}
+a:hover
+{
+	color: #000;
+}
+.operation
+{
+	display: inline-block;
+	width: 60px;
+	text-align: center;
+}
+
+#add-new-form
+{
+	width: 50%;
+
+	background-color: #ffffeb;
+	border-radius: 3px;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+#add-new-form input[type='text'],
+#add-new-form input[type='password'],
+td > input[type='text']
+{
+	width: 98%;
+	line-height: 1.4;
+	font-size: 1.1rem;
+}
+#add-new-div
+{
+	margin-bottom: 25px;
+}
+#add-new
+{
+	margin-bottom: 25px;
+	float: left;
+}
+#logout
+{
+	margin-bottom: 25px;
+	float: right;
+}

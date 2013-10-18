@@ -12,7 +12,14 @@ if (!isset($_SESSION['user_info']))
 	$arrRet['errno'] = 1;
 	$arrRet['err_msg'] .= "<p>Login expired</p>";
 }
-if ($_SESSION['user_info']['privilege'] != 0 && $_SESSION['user_info']['id'] != $_POST['id'])
+if (!isset($_POST['id']) && $_SESSION['user_info']['privilege'] != 0)
+{
+	$arrRet['errno'] = 1;
+	$arrRet['err_msg'] .= "<p>Permission Denied</p>";
+}
+if ($_SESSION['user_info']['privilege'] != 0 &&
+	isset($_POST['id']) &&
+	$_SESSION['user_info']['id'] != $_POST['id'])
 {
 	$arrRet['errno'] = 1;
 	$arrRet['err_msg'] .= "<p>Permission Denied</p>";
@@ -135,6 +142,7 @@ else
 	{
 		$arrRet['errno'] = 1;
 		$arrRet['err_msg'] .= "<p>password missmatch</p>";
+		$arrData['pwd'] = '';
 	}
 	else
 	{

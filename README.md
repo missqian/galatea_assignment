@@ -15,4 +15,5 @@ Installation:
 - Launch browser and open [url_to_this_project]/index.php
 
 Initial username = admin
+
 Initial password = password

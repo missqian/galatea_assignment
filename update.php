@@ -98,7 +98,6 @@ function verify_data($arrData)
 		{
 			$arrRet['errno'] = 1;
 			$arrRet['err_msg'] .= "<p>Password is too short</p>";
-			$arrRet['err_msg'] .= strlen($arrRet['pwd']);
 
 			return null;
 		}
